@@ -1,0 +1,81 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h1 {
+    text-align:  center;
+    font-weight: bold;
+   
+}
+body{
+    background: linear-gradient(to bottom,#74ebd5,#ACB6E5) no-repeat;
+}
+.container {
+    margin: auto;
+    width: 50%;
+
+    padding: 10px;
+    height: 100vh;
+    border-radius: 3px;
+    
+}
+
+.form-group input {
+    width: 80%;
+    font-size:1.5rem;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 1.1rem .5rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 3px;
+    
+}
+.btn{
+    margin-top: 5px;
+    margin-left: 7px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background: #74ebd5;
+    border-radius: 3px;
+    padding:.5rem
+}
+.btn-list{
+    display: flex;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: rgb(119, 238, 119);
+    border-radius: 3px;
+    padding:.3rem;
+    right:0
+}
+.form-group button:hover {
+    
+    background:linear-gradient(to right,#667db6,#0082c8)
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:antiquewhite;
+    border : 1px solid black
+}
+
+#myul {
+    font-size:2rem;
+    font-weight:bold;
+    list-style: none;
+}
+li {
+    width: 100%;
+}
+
