@@ -78,4 +78,7 @@ body{
 li {
     width: 100%;
 }
+.text-decoration{
+    text-decoration: line-through;
+}
 
