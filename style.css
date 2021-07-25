@@ -90,14 +90,23 @@ ul li{
 .btn-list{
     padding: 0.5rem;
     background: #ff3700;
-    color: white;
+    color:white;
     border: none;
     margin-left: 0.2rem;
     cursor: pointer;
     font-size: 1rem;
 }
 
+.btn-list:hover {
+    background: gray;
+    color:#ff3700
+}
+
 
 .text-decoration{
     text-decoration: line-through;
+   
 }
+
+.background-
+
