@@ -2,6 +2,8 @@ const inputTodo = document.querySelector('#input-todo');
 const myul = document.querySelector('#myul')
 let flag = true;
 
+
+
 const addTodo = () => {
     let valueInputTodo = inputTodo.value;
     let todoDiv = document.createElement('div');
@@ -19,12 +21,21 @@ const addTodo = () => {
     })
     li.addEventListener("click", (event) => {
         if(flag){
-            event.target.classList.add("text-decoration")
+            event.target.style.textDecoration = "line-through"
+            event.target.parentElement.style.backgroundColor = "gray";
             flag =false;
         } else {
-            event.target.classList.remove("text-decoration")
+            event.target.style.textDecoration = ""
+            event.target.parentElement.style.backgroundColor = "";
             flag = true
         }
     })
+    inputTodo.value = ""
     
 }
+
+inputTodo.addEventListener('keydown',(event)=>{
+    if(event.keyCode === 13){
+        addTodo()
+    }
+})
