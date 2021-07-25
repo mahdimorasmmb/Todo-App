@@ -9,7 +9,7 @@ const addTodo = () => {
     button.textContent = "Delete";
     button.setAttribute("class", "btn-list");
     li.textContent = valueInputTodo;
-    li.appendChild(button);
+    myul.appendChild(button);
     myul.appendChild(li)
     button.addEventListener('click', (event) => {
         event.target.parentElement.remove();

@@ -1,17 +1,47 @@
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
 }
 
 
 h1 {
     text-align:  center;
     font-weight: bold;
-   
+   font-size: 4rem;
 }
 body{
-    background: linear-gradient(to bottom,#74ebd5,#ACB6E5) no-repeat;
+    background: linear-gradient(to bottom,#ACB6E5,#74ebd5) no-repeat;
+    height: 100vh;
+    color: white;
 }
-.container {
+
+
+.form-group {
+    display: flex;
+    height:15vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul {
+    display: flex;
+    height:15vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group input ,button {
+    padding: 0.4rem;
+    border: none;
+    font-size: 1.6rem;
+    background: white;
+}
+
+.
+/* .container {
     margin: auto;
     width: 50%;
 
@@ -47,8 +77,8 @@ body{
     padding:.5rem
 }
 .btn-list{
-    display: flex;
-    margin-left: 10px;
+    position:relative;
+    right:0;
     font-weight: bold;
     font-size: 1.2rem;
     background: rgb(119, 238, 119);
@@ -70,15 +100,11 @@ body{
     border : 1px solid black
 }
 
-#myul {
-    font-size:2rem;
-    font-weight:bold;
-    list-style: none;
-}
+
 li {
     width: 100%;
 }
 .text-decoration{
     text-decoration: line-through;
 }
-
+ */
