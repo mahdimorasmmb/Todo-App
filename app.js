@@ -4,13 +4,16 @@ let flag = true;
 
 const addTodo = () => {
     let valueInputTodo = inputTodo.value;
+    let todoDiv = document.createElement('div');
+    todoDiv.classList.add('todo');
     let li = document.createElement('li');
     let button = document.createElement('button');
     button.textContent = "Delete";
     button.setAttribute("class", "btn-list");
     li.textContent = valueInputTodo;
-    myul.appendChild(button);
-    myul.appendChild(li)
+    todoDiv.appendChild(li)
+    todoDiv.appendChild(button)
+    myul.appendChild(todoDiv);
     button.addEventListener('click', (event) => {
         event.target.parentElement.remove();
     })
